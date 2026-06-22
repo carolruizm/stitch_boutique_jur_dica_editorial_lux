@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ESTUDIO LEGAL | Excelencia Jurídica</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#dadad8",
+                    "on-primary-container": "#858383",
+                    "on-error": "#ffffff",
+                    "on-surface": "#1a1c1b",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#c4c7c7",
+                    "secondary": "#725b38",
+                    "surface-container-low": "#f4f3f1",
+                    "surface-container-highest": "#e3e2e0",
+                    "on-tertiary-container": "#8b827e",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "surface-variant": "#e3e2e0",
+                    "background": "#faf9f7",
+                    "secondary-fixed": "#fedeb2",
+                    "inverse-primary": "#c8c6c5",
+                    "on-tertiary-fixed-variant": "#4c4542",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#584323",
+                    "tertiary-container": "#201a17",
+                    "inverse-surface": "#2f3130",
+                    "tertiary-fixed-dim": "#cfc4bf",
+                    "on-secondary-fixed": "#281800",
+                    "surface": "#faf9f7",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#474646",
+                    "inverse-on-surface": "#f1f1ef",
+                    "surface-bright": "#faf9f7",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#000000",
+                    "primary-container": "#1c1b1b",
+                    "secondary-fixed-dim": "#e0c298",
+                    "tertiary": "#000000",
+                    "surface-container-high": "#e9e8e6",
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-container": "#efeeec",
+                    "on-secondary-container": "#78603e",
+                    "tertiary-fixed": "#ece0db",
+                    "outline": "#747878",
+                    "on-tertiary-fixed": "#201a17",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#444748",
+                    "on-background": "#1a1c1b",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#e5e2e1",
+                    "secondary-container": "#fedeb2",
+                    "surface-tint": "#5f5e5e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-edge": "64px",
+                    "gutter": "32px",
+                    "unit": "8px",
+                    "container-max": "1440px",
+                    "section-gap": "160px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-xl-mobile": ["EB Garamond"],
+                    "nav-link": ["Inter"],
+                    "headline-lg": ["EB Garamond"],
+                    "headline-md": ["EB Garamond"],
+                    "display-xl": ["EB Garamond"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                    "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-xl-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "nav-link": ["12px", {"lineHeight": "16px", "letterSpacing": "0.2em", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "display-xl": ["80px", {"lineHeight": "88px", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #faf9f7;
+            color: #000000;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-size: 1.25rem;
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hairline-b { border-bottom: 1px solid rgba(15, 15, 15, 0.1); }
+        .hairline-t { border-top: 1px solid rgba(15, 15, 15, 0.1); }
+        .hairline-r { border-right: 1px solid rgba(15, 15, 15, 0.1); }
+    </style>
+</head>
+<body class="font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-on-surface/10">
+<div class="flex justify-between items-center h-20 px-margin-edge w-full">
+<div class="font-headline-md text-headline-md tracking-tighter text-primary">Lawyers GT</div>
+<div class="hidden md:flex space-x-12">
+<a class="font-nav-link text-nav-link tracking-[0.2em] uppercase text-on-surface-variant hover:text-secondary-container transition-colors duration-300" href="#areas">Áreas de Práctica</a>
+<a class="font-nav-link text-nav-link tracking-[0.2em] uppercase text-on-surface-variant hover:text-secondary-container transition-colors duration-300" href="#firma">La Firma</a>
+<a class="font-nav-link text-nav-link tracking-[0.2em] uppercase text-on-surface-variant hover:text-secondary-container transition-colors duration-300" href="#contacto">Contacto</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 font-nav-link text-nav-link tracking-[0.2em] uppercase transition-all duration-500 ease-in-out hover:opacity-80">
+                Consultoría
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center overflow-hidden bg-surface">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-40 mix-blend-multiply transition-transform duration-[10s] hover:scale-105" data-alt="Cinematic, moody exterior photograph of a modern, minimalist luxury building facade with clean architectural lines and premium materials." style='background-image: url("https://lh3.googleusercontent.com/aida/AP1WRLtAU1eMlSlEJuVCr2JsdT64WGlyeB_B6TgS4qY98eva_4gNi2_4773vLDz7B76pRPns2FocqR-wRcoztWmlFP-fvy4rah7fDE4TDuwBd7g-SosCmXoBZfzeYyMvQtB0Z8QjXaQFssK3_fY8HiXwUCbD1olOdE125aqULN2ydWbYfmaUU5yTQMR2IK_Z-MnU8fACto4g2aUlZrFhQ-CkBFPyqDOcxTV58vD9PNBcY3GwcGvBdGobhj6L_YdB");'></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-edge w-full max-w-container-max mx-auto grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-8">
+<h1 class="font-display-xl text-display-xl-mobile md:text-display-xl mb-8 leading-tight">
+                        Estrategias legales a la medida de <span class="italic font-light">grandes visiones.</span>
+</h1>
+<div class="flex items-center space-x-8">
+<a class="bg-primary text-on-primary px-10 py-5 font-nav-link text-nav-link tracking-[0.2em] uppercase transition-all duration-300 hover:bg-secondary" href="#contacto">
+                            Iniciar Consulta Privada
+                        </a>
+<span class="w-24 h-[1px] bg-primary hidden md:block"></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Manifiesto -->
+<section class="py-section-gap px-margin-edge bg-surface" id="firma">
+<div class="max-w-container-max mx-auto grid grid-cols-12 gap-gutter items-center">
+<div class="col-span-12 md:col-start-5 md:col-span-7 reveal-on-scroll active">
+<p class="font-label-sm text-label-sm uppercase tracking-[0.3em] text-secondary mb-6">Manifiesto</p>
+<h2 class="font-headline-lg text-headline-lg leading-snug mb-10">
+                        No aceptamos cientos de casos; dedicamos nuestra firma entera al suyo. 
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l border-primary pl-8 italic">
+                        Rigor, discreción y excelencia artesanal. Entendemos el derecho no como un proceso mecánico, sino como una arquitectura intelectual diseñada para proteger el legado de nuestros clientes más exigentes.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Specializations: Bento-inspired cards -->
+<section class="py-section-gap px-margin-edge bg-surface-container-low" id="areas">
+<div class="max-w-container-max mx-auto">
+<div class="mb-20 reveal-on-scroll active">
+<h2 class="font-headline-lg text-headline-lg">Especialidades <span class="font-light italic text-secondary">de Élite</span></h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Card 1 -->
+<div class="group relative bg-surface p-12 transition-all duration-500 hover:-translate-y-2 reveal-on-scroll border border-transparent hover:border-secondary/20 active">
+<span class="font-headline-md text-secondary opacity-30 mb-8 block">I.</span>
+<h3 class="font-headline-md text-headline-md mb-6">Derecho Corporativo y Fusiones</h3>
+<p class="font-body-md text-on-surface-variant mb-12">Asesoría estratégica en transacciones transfronterizas y reestructuraciones de alta complejidad.</p>
+<div class="w-full h-48 bg-cover bg-center desaturate grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A minimalist architectural detail of a high-end boardroom table with a single designer fountain pen resting on a crisp white legal document. The scene is lit with warm, soft morning light in an alabaster-toned office space, evoking a sense of prestige, precision, and high-stakes corporate law." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2aqfi4dP06ZiqhPxxEXAkAz3510cZBi363XdkRUWFqguc2Tq4TZnsaFcbh3tBo5yjtfMni8O6nWi4Phny3do2EOdCOl3LfbS5nzUa_JsH8UF7Q-QLPaTXv9tQU1WNhQG89V2tkWjYUok0rZAR0ij8lJJtsmU9ACO_EH__n0DLYg537hhIodch3FxTZ21j-DljOukiPr8SAd5ijwb31wDKpzP9FD2EM2sNj0dsBHd3grWrO3rVOcvw9YKrY_ZvjbsTSl42zNOCt-21");'></div>
+</div>
+<!-- Card 2 -->
+<div class="group relative bg-surface p-12 transition-all duration-500 hover:-translate-y-2 reveal-on-scroll border border-transparent hover:border-secondary/20 md:mt-16 active">
+<span class="font-headline-md text-secondary opacity-30 mb-8 block">II.</span>
+<h3 class="font-headline-md text-headline-md mb-6">Protección Patrimonial</h3>
+<p class="font-body-md text-on-surface-variant mb-12">Ingeniería jurídica para la preservación de activos globales y sucesiones de grandes fortunas.</p>
+<div class="w-full h-48 bg-cover bg-center desaturate grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="An artistic, abstract close-up of a secure, classic vault mechanism or a sophisticated geometric sculpture in a modern art gallery setting. The lighting is dramatic and cinematic, highlighting metallic textures and obsidian-colored shadows, symbolizing security and absolute wealth protection." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1zj4foYsBe371baYL5z_k3Oh65hk8lGjPGK4Lf6LKDWIBdmwzp8bKMwP7yKA80EinGuc_iY1RD8kQ5PZ5l1b5yODiXXRBRH9fYsu1iqnCQkhFL-BZKuopqcMKPkZcNeL1_ju1VcLNjNX7IRK-eaXZan3GhPCIitXPIS9jl4XM52DybsGmcaTCE2HGKBGYHQ23MTL0yTl9vV_CT2K-m375hcXxiLdtosEyhrbNWybuRSOkEfRtX4XUNtnD3mdBtPSEsf1ieSUqIqb1");'></div>
+</div>
+<!-- Card 3 -->
+<div class="group relative bg-surface p-12 transition-all duration-500 hover:-translate-y-2 reveal-on-scroll border border-transparent hover:border-secondary/20 active">
+<span class="font-headline-md text-secondary opacity-30 mb-8 block">III.</span>
+<h3 class="font-headline-md text-headline-md mb-6">Propiedad Intelectual</h3>
+<h3 class="font-headline-md text-headline-md mb-6"></h3>
+<p class="font-body-md text-on-surface-variant mb-12">Salvaguarda de activos intangibles y patentes críticas para industrias disruptivas.</p>
+<div class="w-full h-48 bg-cover bg-center desaturate grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A macro detail of a classic typewriter's metal hammers or a sleek modern patent drawing with elegant line work. The visual style is editorial and avant-garde, using a monochrome palette with soft golden highlights, representing the creative and intellectual side of prestigious legal practice." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgriKhyJV95dJCtvV7mN_U9tU6r3xf3ewndlMSEzwU-sPEt8txmZkKRwHJo6YSUYdiRMKNr1ryD3Qb9FlCNy2A5DGsq6DlTtX5xs8JZq8kIWpg9KRvM2iF4Ha-PkwxZ7kG-ljklfDSUl5NaYSEQzOyUjCNADdM_bLZJCBxVbwLhUWiuAFUh-bMd9GI7jWTlzheIV0oxCbbNXFBNaAuusq_xqOCmtc2fGgIiwAdPe9Auajdf48_cgydoBHiwmNQxJYwrk6x0v5xZMA_");'></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Partners -->
+<section class="py-section-gap px-margin-edge bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-12 gap-gutter mb-24 reveal-on-scroll active">
+<div class="col-span-12 md:col-span-4">
+<h2 class="font-headline-lg text-headline-lg">Liderazgo <span class="italic">Intelectual</span></h2>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7">
+<p class="font-body-lg text-body-lg text-on-surface-variant">Nuestros socios fundadores combinan décadas de experiencia en tribunales internacionales con una visión innovadora de la práctica jurídica.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24">
+<div class="reveal-on-scroll active">
+<div class="aspect-[4/5] bg-surface-container-highest mb-8 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-[3s] hover:scale-105" data-alt="Professional corporate portrait of Alejandro de la Vega, a distinguished Latino male lawyer in a tailored navy suit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgA1bmLbQihi2BbY203dLGml-vJWRuwuiuFShf9DzkiiutDjjuew3fh7Lfsm6VvQsDVhWLsKawsfZXbIqUdvMe0D1U7y1b1hV_9ylogEulyJRUGgjyVOx7nJfkby_X2w4TYraJQ1HrB0ar_nBipFXQ-JQa8A_ma9dDy7Mb2YrQnhVkgK5QO88S2QRBQJubixfTf9Ivx72CcnM0ybfTCPzLAXHFGnIWiow5dtZq0oI7LvjpuGAOjdQ1XBAixsEgC6oamHRtCseI7zWI"/>
+</div>
+<div class="px-4">
+<h4 class="font-headline-md mb-2">Alejandro de la Vega</h4>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mb-6">Socio Director | M&amp;A</p>
+<p class="font-body-md text-on-surface-variant">Reconocido por su capacidad analítica en negociaciones de alta tensión, Alejandro ha liderado las fusiones más significativas de la última década.</p>
+</div>
+</div>
+<div class="reveal-on-scroll md:pt-32 active">
+<div class="aspect-[4/5] bg-surface-container-highest mb-8 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-[3s] hover:scale-105" data-alt="Professional corporate portrait of Elena Santamaría, an elegant Latina female lawyer in a charcoal grey blazer." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk3j5rpgLAl1RosVBh4WSr-TytGLBOoryQCmyHGYzZM3O8Rclaj9LZogxxBirEmdVXQuUl28Nozz4N3jyn0ok51qQ4t0xj7J5VsV27JTMRooe8-v8o3Gbq7QJ2dvRfkoT0o2jUz_radogwIbWSQrfN8j8z7G3IyHBY3ggOkhJDKcI0XEmxRg49lyRUm-vDPCQqLHG4hQ1_5aswGoA9cJ4kaEDde8dBPR5089xnQrDdUXE5gDXqIeu8QLsxYTgI6IvpNhZqQBCp9FVY"/>
+</div>
+<div class="px-4">
+<h4 class="font-headline-md mb-2">Elena Santamaría</h4>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mb-6">Socio | Protección Patrimonial</p>
+<p class="font-body-md text-on-surface-variant">Especialista en estructuración internacional de activos, Elena es la asesora de confianza de las familias más influyentes de la región.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-margin-edge bg-primary-container text-surface overflow-hidden relative" id="contacto">
+<!-- Subtle Shader background for atmosphere -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-12 gap-gutter relative z-10">
+<div class="col-span-12 md:col-span-5 mb-16 md:mb-0 reveal-on-scroll active">
+<p class="font-label-sm text-label-sm uppercase tracking-[0.3em] text-secondary-fixed-dim mb-6">Compromiso</p>
+<h2 class="font-headline-lg text-display-xl-mobile md:text-headline-lg mb-10 leading-tight">Agende una sesión estratégica corporativa.</h2>
+<p class="font-body-lg text-primary-fixed-dim mb-12">Nuestra respuesta es inmediata y bajo estricto protocolo de confidencialidad.</p>
+<div class="space-y-6">
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim">location_on</span>
+<span class="font-body-md tracking-wide">Avenida Reforma 9-55, Zona 10, Ciudad de Guatemala</span>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim">mail</span>
+<span class="font-body-md tracking-wide">privado@estudiolegal.gt</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-start-7 md:col-span-6 reveal-on-scroll active">
+<form class="space-y-12">
+<div class="group">
+<label class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim mb-2 block">Nombre Completo</label>
+<input class="w-full bg-transparent border-b border-primary-fixed-dim/30 py-4 focus:outline-none focus:border-secondary-fixed-dim transition-colors placeholder:text-primary-fixed-dim/20" placeholder="Su nombre y apellidos" type="text"/>
+</div>
+<div class="group">
+<label class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim mb-2 block">Organización</label>
+<input class="w-full bg-transparent border-b border-primary-fixed-dim/30 py-4 focus:outline-none focus:border-secondary-fixed-dim transition-colors placeholder:text-primary-fixed-dim/20" placeholder="Entidad legal o firma" type="text"/>
+</div>
+<div class="group">
+<label class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim mb-2 block">Naturaleza de la Consulta</label>
+<select class="w-full bg-transparent border-b border-primary-fixed-dim/30 py-4 focus:outline-none focus:border-secondary-fixed-dim transition-colors text-primary-fixed-dim/60">
+<option class="bg-primary-container">Seleccione un área de práctica</option>
+<option class="bg-primary-container">Derecho Corporativo</option>
+<option class="bg-primary-container">Protección Patrimonial</option>
+<option class="bg-primary-container">Propiedad Intelectual</option>
+<option class="bg-primary-container">Otros Asuntos</option>
+</select>
+</div>
+<button class="w-full md:w-auto bg-surface text-primary px-16 py-5 font-nav-link text-nav-link tracking-[0.2em] uppercase hover:bg-secondary-fixed-dim transition-all duration-300">
+                            Enviar Solicitud
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-tertiary-container dark:bg-primary-container w-full py-section-gap">
+<div class="grid grid-cols-12 px-margin-edge w-full items-end gap-y-16">
+<div class="col-span-12 md:col-span-4">
+<div class="font-headline-md text-headline-md text-tertiary-fixed mb-8">Lawyers GT</div>
+<p class="font-body-md text-on-tertiary-container max-w-xs">Boutique jurídica especializada en la defensa de intereses corporativos y patrimoniales globales.</p>
+</div>
+<div class="col-span-12 md:col-span-4 flex flex-col space-y-4">
+<a class="font-label-sm text-label-sm tracking-widest text-on-tertiary-container hover:text-secondary-fixed transition-opacity opacity-80 hover:opacity-100" href="#">Aviso Legal</a>
+<a class="font-label-sm text-label-sm tracking-widest text-on-tertiary-container hover:text-secondary-fixed transition-opacity opacity-80 hover:opacity-100" href="#">Privacidad</a>
+<a class="font-label-sm text-label-sm tracking-widest text-on-tertiary-container hover:text-secondary-fixed transition-opacity opacity-80 hover:opacity-100" href="#">Términos</a>
+</div>
+<div class="col-span-12 md:col-span-4 text-left md:text-right">
+<p class="font-label-sm text-label-sm tracking-widest text-tertiary-fixed mb-4">© 2026 Lawyers GT. EXCELENCIA JURÍDICA.</p>
+<div class="flex md:justify-end space-x-6">
+<a class="text-on-tertiary-container hover:text-tertiary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="text-on-tertiary-container hover:text-tertiary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined">cases</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Reveal animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Sticky Nav logic
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+            }
+        });
+    </script>
+</body></html>

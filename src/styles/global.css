@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-dim: #dadad8;
+  --color-on-primary-container: #858383;
+  --color-on-error: #ffffff;
+  --color-on-surface: #1a1c1b;
+  --color-on-error-container: #93000a;
+  --color-outline-variant: #c4c7c7;
+  --color-secondary: #725b38;
+  --color-surface-container-low: #f4f3f1;
+  --color-surface-container-highest: #e3e2e0;
+  --color-on-tertiary-container: #8b827e;
+  --color-primary-fixed-dim: #c8c6c5;
+  --color-surface-variant: #e3e2e0;
+  --color-background: #faf9f7;
+  --color-secondary-fixed: #fedeb2;
+  --color-inverse-primary: #c8c6c5;
+  --color-on-tertiary-fixed-variant: #4c4542;
+  --color-error: #ba1a1a;
+  --color-on-secondary-fixed-variant: #584323;
+  --color-tertiary-container: #201a17;
+  --color-inverse-surface: #2f3130;
+  --color-tertiary-fixed-dim: #cfc4bf;
+  --color-on-secondary-fixed: #281800;
+  --color-surface: #faf9f7;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary-fixed-variant: #474646;
+  --color-inverse-on-surface: #f1f1ef;
+  --color-surface-bright: #faf9f7;
+  --color-surface-container-lowest: #ffffff;
+  --color-primary: #000000;
+  --color-primary-container: #1c1b1b;
+  --color-secondary-fixed-dim: #e0c298;
+  --color-tertiary: #000000;
+  --color-surface-container-high: #e9e8e6;
+  --color-on-primary-fixed: #1c1b1b;
+  --color-surface-container: #efeeec;
+  --color-on-secondary-container: #78603e;
+  --color-tertiary-fixed: #ece0db;
+  --color-outline: #747878;
+  --color-on-tertiary-fixed: #201a17;
+  --color-on-secondary: #ffffff;
+  --color-on-surface-variant: #444748;
+  --color-on-background: #1a1c1b;
+  --color-error-container: #ffdad6;
+  --color-on-primary: #ffffff;
+  --color-primary-fixed: #e5e2e1;
+  --color-secondary-container: #fedeb2;
+  --color-surface-tint: #5f5e5e;
+
+  --font-body-lg: "Inter", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-display-xl-mobile: "EB Garamond", serif;
+  --font-nav-link: "Inter", sans-serif;
+  --font-headline-lg: "EB Garamond", serif;
+  --font-headline-md: "EB Garamond", serif;
+  --font-display-xl: "EB Garamond", serif;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 32px;
+  --text-body-lg--letter-spacing: 0.01em;
+  --text-body-lg--font-weight: 300;
+  --text-label-sm: 11px;
+  --text-label-sm--line-height: 14px;
+  --text-label-sm--letter-spacing: 0.1em;
+  --text-label-sm--font-weight: 600;
+  --text-body-md: 16px;
+  --text-body-md--line-height: 28px;
+  --text-body-md--font-weight: 400;
+  --text-display-xl-mobile: 48px;
+  --text-display-xl-mobile--line-height: 52px;
+  --text-display-xl-mobile--letter-spacing: -0.01em;
+  --text-display-xl-mobile--font-weight: 400;
+  --text-nav-link: 12px;
+  --text-nav-link--line-height: 16px;
+  --text-nav-link--letter-spacing: 0.2em;
+  --text-nav-link--font-weight: 500;
+  --text-headline-lg: 48px;
+  --text-headline-lg--line-height: 56px;
+  --text-headline-lg--font-weight: 400;
+  --text-headline-md: 32px;
+  --text-headline-md--line-height: 40px;
+  --text-headline-md--font-weight: 400;
+  --text-display-xl: 80px;
+  --text-display-xl--line-height: 88px;
+  --text-display-xl--letter-spacing: -0.02em;
+  --text-display-xl--font-weight: 400;
+
+  --spacing-margin-edge: 64px;
+  --spacing-gutter: 32px;
+  --spacing-unit: 8px;
+  --spacing-container-max: 1440px;
+  --spacing-section-gap: 160px;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}
+
+body {
+  background-color: #faf9f7;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+  font-size: 1.25rem;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hairline-b {
+  border-bottom: 1px solid rgba(15, 15, 15, 0.1);
+}
+
+.hairline-t {
+  border-top: 1px solid rgba(15, 15, 15, 0.1);
+}
+
+.hairline-r {
+  border-right: 1px solid rgba(15, 15, 15, 0.1);
+}

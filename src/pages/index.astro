@@ -1,17 +1,45 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import NavBar from "../components/NavBar.astro";
+import Hero from "../components/Hero.astro";
+import Manifiesto from "../components/Manifiesto.astro";
+import Especialidades from "../components/Especialidades.astro";
+import Liderazgo from "../components/Liderazgo.astro";
+import Contacto from "../components/Contacto.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <NavBar />
+  <main>
+    <Hero />
+    <Manifiesto />
+    <Especialidades />
+    <Liderazgo />
+    <Contacto />
+  </main>
+  <Footer />
+  <script>
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
+      observer.observe(el);
+    });
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector("nav");
+      if (window.scrollY > 50) {
+        nav.classList.add("py-2");
+        nav.classList.remove("py-4");
+      } else {
+        nav.classList.add("py-4");
+        nav.classList.remove("py-2");
+      }
+    });
+  </script>
+</Layout>
