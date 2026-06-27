@@ -105,6 +105,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@media (max-width: 767px) {
+  :root {
+    --spacing-margin-edge: 24px;
+    --spacing-section-gap: 80px;
+    --spacing-gutter: 20px;
+  }
+}
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
   font-size: 1.25rem;

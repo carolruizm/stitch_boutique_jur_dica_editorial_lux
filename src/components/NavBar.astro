@@ -1,5 +1,5 @@
-<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-on-surface/10">
-  <div class="flex justify-between items-center h-20 px-margin-edge w-full">
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-on-surface/10" x-data="{ open: false }">
+  <div class="flex justify-between items-center h-16 md:h-20 px-6 md:px-margin-edge w-full">
     <div class="font-headline-md text-headline-md tracking-tighter text-primary">Lawyers GT</div>
     <div class="hidden md:flex space-x-12">
       <a
@@ -21,11 +21,43 @@
         Contacto
       </a>
     </div>
-    <a
-      href="#contacto"
-      class="bg-primary text-on-primary px-8 py-3 font-nav-link text-nav-link tracking-[0.2em] uppercase transition-all duration-500 ease-in-out hover:opacity-80"
-    >
-      Consultoría
-    </a>
+    <div class="flex items-center space-x-4">
+      <a
+        href="#contacto"
+        class="hidden md:inline-block bg-primary text-on-primary px-8 py-3 font-nav-link text-nav-link tracking-[0.2em] uppercase transition-all duration-500 ease-in-out hover:opacity-80"
+      >
+        Consultoría
+      </a>
+      <button id="menu-toggle" class="md:hidden flex flex-col space-y-1.5 p-2" aria-label="Menú">
+        <span class="block w-6 h-[1.5px] bg-primary transition-all duration-300"></span>
+        <span class="block w-6 h-[1.5px] bg-primary transition-all duration-300"></span>
+        <span class="block w-6 h-[1.5px] bg-primary transition-all duration-300"></span>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-surface/95 backdrop-blur-md border-t border-on-surface/10">
+    <div class="flex flex-col space-y-6 px-6 py-8">
+      <a class="font-nav-link text-nav-link tracking-[0.2em] uppercase text-on-surface-variant hover:text-primary transition-colors" href="#areas" @click="open = false">Áreas de Práctica</a>
+      <a class="font-nav-link text-nav-link tracking-[0.2em] uppercase text-on-surface-variant hover:text-primary transition-colors" href="#firma" @click="open = false">La Firma</a>
+      <a class="font-nav-link text-nav-link tracking-[0.2em] uppercase text-on-surface-variant hover:text-primary transition-colors" href="#contacto" @click="open = false">Contacto</a>
+      <a class="bg-primary text-on-primary px-8 py-4 font-nav-link text-nav-link tracking-[0.2em] uppercase text-center hover:opacity-80 transition-all" href="#contacto">Consultoría</a>
+    </div>
   </div>
 </nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+    if (toggle && menu) {
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+      menu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.add("hidden");
+        });
+      });
+    }
+  });
+</script>
