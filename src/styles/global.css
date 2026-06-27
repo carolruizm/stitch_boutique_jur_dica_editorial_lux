@@ -62,8 +62,8 @@
   --text-body-lg--line-height: 32px;
   --text-body-lg--letter-spacing: 0.01em;
   --text-body-lg--font-weight: 300;
-  --text-label-sm: 11px;
-  --text-label-sm--line-height: 14px;
+  --text-label-sm: 14px;
+  --text-label-sm--line-height: 18px;
   --text-label-sm--letter-spacing: 0.1em;
   --text-label-sm--font-weight: 600;
   --text-body-md: 16px;
@@ -73,8 +73,8 @@
   --text-display-xl-mobile--line-height: 52px;
   --text-display-xl-mobile--letter-spacing: -0.01em;
   --text-display-xl-mobile--font-weight: 400;
-  --text-nav-link: 12px;
-  --text-nav-link--line-height: 16px;
+  --text-nav-link: 14px;
+  --text-nav-link--line-height: 18px;
   --text-nav-link--letter-spacing: 0.2em;
   --text-nav-link--font-weight: 500;
   --text-headline-lg: 48px;
@@ -110,8 +110,8 @@ body {
     --spacing-margin-edge: 24px;
     --spacing-section-gap: 80px;
     --spacing-gutter: 20px;
-    --text-label-sm: 13px;
-    --text-nav-link: 13px;
+    --text-label-sm: 14px;
+    --text-nav-link: 14px;
   }
 }
 
