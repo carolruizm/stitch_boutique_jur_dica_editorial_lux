@@ -110,6 +110,8 @@ body {
     --spacing-margin-edge: 24px;
     --spacing-section-gap: 80px;
     --spacing-gutter: 20px;
+    --text-label-sm: 13px;
+    --text-nav-link: 13px;
   }
 }
 
